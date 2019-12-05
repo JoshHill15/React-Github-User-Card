@@ -1,0 +1,23 @@
+.all{
+    background: lightslategray;
+    width: 60%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.me{
+    background: lightblue;
+    padding: 15%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.two{
+    background: lightcoral;
+    padding:10%
+}
+.cards{
+    background: whitesmoke;
+}
