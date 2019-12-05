@@ -31,7 +31,6 @@ class CardList extends React.Component {
             followers: res.data
         })
     })
-    .get(following_url => console.log(following_url))
     .catch(err => console.log("SOMETHINGS WRONG", err))
         // foreach
     this.users.map(cv => {
@@ -57,7 +56,9 @@ class CardList extends React.Component {
     render(){
         return (
             <div>
-                <p className = "me">My Card: <br/>{this.state.me.name}</p>
+                <p className = "me">My Card: <br/>{this.state.me.name}
+                <br/>{this.state.me.bio}</p>
+
                 <h3>My followers: </h3>
                 {this.state.followers.map(follower => (
                     <Card key = {follower.id} follower = {follower}/>
